@@ -4,8 +4,11 @@ Lab6::Application.routes.draw do
   root 'films#index'
 
   get "search/by_film"
+  get "search/by_film_result"
   get "search/by_cinema"
-  get "search/by_film"
+  get "search/by_cinema_result"
+  get "search/by_session"
+  get "search/by_session_result"
 
   resources :films
 
